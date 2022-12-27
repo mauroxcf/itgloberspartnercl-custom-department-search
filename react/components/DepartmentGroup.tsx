@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
+import PropTypes from 'prop-types';
 import './styles.css'
 
 type Props = {
@@ -34,6 +35,21 @@ const DepartmentGroup = ({ departments, handleSetSlug }:Props) => {
       {departmentOptions}
     </select>
   )
+}
+
+DepartmentGroup.propTypes = {
+  departments: PropTypes.array,
+  handleSetSlug: PropTypes.func,
+}
+
+DepartmentGroup.defaultProps = {
+  departments: [
+    {
+      id: 1,
+      name: "vacío",
+      slug: ""
+    }
+  ],
 }
 
 export default DepartmentGroup

@@ -1,0 +1,11 @@
+.departmentSearch-container {
+    gap: 1rem;
+}
+
+.departmentGroup-selection {
+    border-color: white;
+}
+
+.departmentGroup-options {
+    background-color: #5825CC;
+}
